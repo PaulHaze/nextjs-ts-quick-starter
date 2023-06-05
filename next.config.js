@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // Uncoment to add domain whitelist
+  // images: {
+  //   domains: [
+  //     'res.cloudinary.com',
+  //   ],
+  // },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
