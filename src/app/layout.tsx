@@ -2,6 +2,7 @@ import '@/styles/main.scss';
 
 import type { Metadata } from 'next';
 
+// !CHANGETHIS
 export const metadata: Metadata = {
   title: 'CHANGE THIS',
   description: 'CHANGE THIS',
