@@ -2,8 +2,9 @@ module.exports = {
   // Configuration for JavaScript files
   extends: [
     'next',
+    "next/babel",
+    "next/core-web-vitals",
     'airbnb-base',
-    'next/core-web-vitals', // Needed to avoid warning in next.js build: 'The Next.js plugin was not detected in your ESLint configuration',
     'prettier',
     'plugin:prettier/recommended',
   ],
