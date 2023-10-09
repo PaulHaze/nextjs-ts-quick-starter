@@ -2,8 +2,7 @@ module.exports = {
   // Configuration for JavaScript files
   extends: [
     'next',
-    "next/babel",
-    "next/core-web-vitals",
+    'next/core-web-vitals',
     'airbnb-base',
     'prettier',
     'plugin:prettier/recommended',
@@ -69,7 +68,12 @@ module.exports = {
           'error',
           { devDependencies: true },
         ],
-        '@typescript-eslint/no-unused-vars': 'off',
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          { argsIgnorePattern: '^_' },
+        ],
+        // '@typescript-eslint/no-unused-vars': 'off',
         'unused-imports/no-unused-imports': 'error',
         'unused-imports/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       },
