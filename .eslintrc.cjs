@@ -13,6 +13,10 @@ module.exports = {
       {
         singleQuote: true,
         endOfLine: 'auto',
+        semi: true,
+        trailingComma: 'all',
+        printWidth: 80,
+        tabWidth: 2,
       },
     ],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
@@ -33,17 +37,6 @@ module.exports = {
         tsconfigRootDir: __dirname,
       },
       rules: {
-        'prettier/prettier': [
-          'error',
-          {
-            singleQuote: true,
-            endOfLine: 'auto',
-            semi: true,
-            trailingComma: 'all',
-            printWidth: 80,
-            tabWidth: 2,
-          },
-        ],
         'react/destructuring-assignment': 'off', // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         'jsx-a11y/anchor-is-valid': 'off', // Next.js uses its own internal link system
         'react/require-default-props': 'off', // Allow non-defined react props as undefined
@@ -73,9 +66,7 @@ module.exports = {
           'error',
           { argsIgnorePattern: '^_' },
         ],
-        // '@typescript-eslint/no-unused-vars': 'off',
         'unused-imports/no-unused-imports': 'error',
-        'unused-imports/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       },
     },
     // Configuration for testing
