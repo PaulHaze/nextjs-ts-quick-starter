@@ -26,12 +26,7 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       plugins: ['@typescript-eslint', 'unused-imports'],
-      extends: [
-        'airbnb-typescript',
-        'next/core-web-vitals',
-        'prettier',
-        'plugin:prettier/recommended',
-      ],
+      extends: ['airbnb-typescript', 'prettier', 'plugin:prettier/recommended'],
       parserOptions: {
         project: './tsconfig.json',
         tsconfigRootDir: __dirname,
