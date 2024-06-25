@@ -1,13 +1,26 @@
+'use client';
+
+import { useTheme } from 'next-themes';
+
 export function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark');
+
   return (
-    <div>
+    <div className="">
       <label className="swap swap-rotate">
         {/* this hidden checkbox controls the state */}
-        <input type="checkbox" className="theme-controller" value="dark" />
+        <input
+          onChange={toggleTheme}
+          type="checkbox"
+          className="theme-controller"
+          value={theme}
+        />
 
         {/* sun icon */}
         <svg
-          className="swap-off h-10 w-10 fill-current"
+          className="swap-off h-6 w-6 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -16,7 +29,7 @@ export function ThemeToggle() {
 
         {/* moon icon */}
         <svg
-          className="swap-on h-10 w-10 fill-current"
+          className="swap-on h-6 w-6 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
