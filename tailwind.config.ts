@@ -1,5 +1,3 @@
-/* eslint-disable global-require */
-/* eslint-disable @typescript-eslint/no-var-requires */
 import type { Config } from 'tailwindcss';
 import typographyPlugin from '@tailwindcss/typography';
 import daisyui from 'daisyui';
@@ -147,8 +145,8 @@ export default {
       {
         light: {
           ...themes.light,
-          '--primary-muted': '338 83% 66%',
-          '--primary-muted-oklch': '62.49% 0.1667 272.93',
+          '--primary-muted': '338 83% 66%', // this is here just as an example of HSL
+          '--primary-muted-oklch': '62.49% 0.1667 272.93', // this is here just as an example of OKLCH
           neutral: '#A7ADBA',
           'neutral-content': '#2d343f',
           // add individual colours here to customize theme
