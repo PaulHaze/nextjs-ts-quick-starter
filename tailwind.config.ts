@@ -8,6 +8,7 @@ import plugin from 'tailwindcss/plugin';
 
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: ['selector', '[data-theme="dark"]'],
   theme: {
     fontSize: {
       xs: '0.75rem',
@@ -45,6 +46,9 @@ export default {
       center: true,
     },
     extend: {
+      colors: {
+        'primary-muted': 'oklch(var(--primary-muted-oklch) / <alpha-value>)',
+      },
       minWidth: {
         xs: '431px',
         sm: '640px',
