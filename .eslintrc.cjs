@@ -65,7 +65,7 @@ module.exports = {
         'unused-imports/no-unused-imports': 'error',
       },
     },
-    // Configuration for testing
+    // Configuration for unit/rtl testing
     {
       files: ['**/*.test.ts', '**/*.test.tsx'],
       plugins: ['jest', 'jest-formatting', 'testing-library', 'jest-dom'],
