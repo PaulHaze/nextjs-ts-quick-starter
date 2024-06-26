@@ -68,13 +68,18 @@ module.exports = {
     // Configuration for unit/rtl testing
     {
       files: ['**/*.test.ts', '**/*.test.tsx'],
-      plugins: ['jest', 'jest-formatting', 'testing-library', 'jest-dom'],
+      plugins: ['vitest', 'jest-formatting', 'testing-library', 'jest-dom'],
       extends: [
-        'plugin:jest/recommended',
+        'plugin:vitest/recommended',
         'plugin:jest-formatting/recommended',
         'plugin:testing-library/react',
         'plugin:jest-dom/recommended',
       ],
+    },
+    // Configuration for e2e testing (Playwright)
+    {
+      files: ['**/*.spec.ts'],
+      extends: ['plugin:playwright/recommended'],
     },
   ],
   globals: {
