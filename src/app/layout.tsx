@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { ThemeProvider } from 'next-themes';
 
 import '@/styles/main.scss';
 
@@ -16,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
