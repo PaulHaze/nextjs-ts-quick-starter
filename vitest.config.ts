@@ -7,5 +7,8 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     environmentMatchGlobs: [['**/*.test.tsx', 'jsdom']],
+    alias: {
+      '@/': new URL('./src/', import.meta.url).pathname,
+    },
   },
 });
