@@ -6,8 +6,8 @@ export default function Home() {
       <div className="absolute right-2 top-3">
         <ThemeToggle />
       </div>
-      <div className="flex justify-center">
-        <h4 className="mt-10">Barebones TW Next Starter</h4>
+      <div className="flex flex-col items-center pt-10">
+        <h4 className="m">Barebones TW Next Starter</h4>
         <h5>With Daisy UI</h5>
       </div>
     </div>
