@@ -6,6 +6,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
+    include: ['src/**/*.test.{js,jsx,ts,tsx}'],
     environmentMatchGlobs: [['**/*.test.tsx', 'jsdom']],
     alias: {
       '@/': new URL('./src/', import.meta.url).pathname,
