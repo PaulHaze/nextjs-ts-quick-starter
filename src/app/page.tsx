@@ -1,4 +1,5 @@
 import { ThemeToggle } from '@/components/ui';
+import { Counter } from '@/components';
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
       <div className="flex flex-col items-center pt-10">
         <h4 className="">Barebones TW Next Starter</h4>
         <h5>With Daisy UI</h5>
+        <h5>With Zustand</h5>
+        <Counter />
       </div>
     </div>
   );
