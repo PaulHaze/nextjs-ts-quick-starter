@@ -8,6 +8,8 @@ export default function Home() {
         <ThemeToggle />
       </div>
       <div className="flex flex-col items-center pt-10">
+        <h1>Home</h1>
+        <Link href="/about">About</Link>
         <h4 className="">Barebones TW Next Starter</h4>
         <h5>With Daisy UI</h5>
         <h5>With Zustand</h5>
