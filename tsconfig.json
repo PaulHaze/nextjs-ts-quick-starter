@@ -34,7 +34,11 @@
       "@Components": [
         "./src/components/index"
       ]
-    }
+    },
+    "types": [
+      "vitest/globals",
+      "vitest/jsdom"
+    ]
   },
   "include": [
     "next-env.d.ts",
