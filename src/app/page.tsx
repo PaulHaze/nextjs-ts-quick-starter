@@ -7,7 +7,7 @@ export default function Home() {
         <ThemeToggle />
       </div>
       <div className="flex flex-col items-center pt-10">
-        <h1>Barebones TW Next Starter</h1>
+        <h1>TW/DaisyUI Next Starter</h1>
       </div>
     </div>
   );
